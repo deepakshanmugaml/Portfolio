@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Public software projects by Deepak Shanmugam, synced from GitHub." />
+    <title>Projects | Deepak Shanmugam</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="brand" href="index.html#intro">Deepak Shanmugam</a>
+      <nav class="top-nav" aria-label="Primary navigation">
+        <a href="index.html#intro">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#software">Software</a>
+        <a href="index.html#visuals">Visuals</a>
+      </nav>
+      <div class="header-actions">
+        <a href="https://github.com/deepakshanmugaml" target="_blank" rel="noreferrer" aria-label="GitHub profile" class="social-link social-image-link">
+          <img src="assets/github.png" alt="GitHub" />
+        </a>
+      </div>
+    </header>
+    <main class="projects-page">
+      <div class="projects-page-header">
+        <div>
+          <p class="eyebrow">GitHub / public repositories</p>
+          <h1>All projects<span class="cursor">|</span></h1>
+          <p>Projects and details from my GitHub account.</p>
+        </div>
+        <output class="projects-count" id="projects-count" aria-live="polite">Loading projects...</output>
+      </div>
+      <section class="projects-list" id="projects-list" aria-label="GitHub projects" aria-live="polite">
+        <p class="projects-status">Loading public repositories from GitHub...</p>
+      </section>
+      <footer class="projects-page-footer">
+        <a href="https://github.com/deepakshanmugaml" target="_blank" rel="noreferrer">View GitHub profile ↗</a>
+      </footer>
+    </main>
+    <script src="projects.js"></script>
+    <script src="https://unpkg.com/lucide@latest" onload="lucide.createIcons()"></script>
+  </body>
+</html>

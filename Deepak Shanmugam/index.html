@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Deepak Shanmugam - engineer and creative technologist." />
+    <title>Deepak Shanmugam | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="brand" href="#intro">Deepak Shanmugam</a>
+      <nav class="top-nav" aria-label="Primary navigation">
+        <a href="#intro">Home</a><a href="#about">About</a><a href="#software">Software</a><a href="#visuals">Visuals</a>
+      </nav>
+      <div class="header-actions">
+        <a href="mailto:deepakshanmugamm@gmail.com" aria-label="Send email"><i data-lucide="mail"></i></a>
+
+        <a href="https://github.com/deepakshanmugaml" target="_blank" rel="noreferrer" aria-label="GitHub" class="social-link social-image-link">
+          <img src="assets/github.png" alt="GitHub" />
+        </a>
+
+        <a href="https://www.linkedin.com/in/deepakshanmugam4" target="_blank" rel="noreferrer" aria-label="LinkedIn" class="social-link social-image-link">
+          <img src="assets/linkedin.png" alt="LinkedIn" />
+        </a>
+
+        <button class="icon-button menu-button" aria-label="Open menu"><i data-lucide="menu"></i></button>
+      </div>
+    </header>
+
+    <main>
+      <section id="intro" class="hero section-shell">
+        <div class="signal-art" aria-hidden="true"><img class="portrait-fallback" src="assets/astra-portrait-transparent.png" alt=""><canvas class="portrait-canvas"></canvas></div>
+        <section class="platformer-panel" id="platformer-panel" aria-labelledby="platformer-title" hidden>
+          <header class="platformer-heading">
+            <div><p class="eyebrow" id="level-kicker">LEVEL 1 / 3</p><h2 id="platformer-title">Mini Platformer</h2><p class="platformer-weapon-status" id="weapon-status" hidden>GUN ONLINE / <span id="bullet-kind">RANDOM ROUND</span></p></div>
+            <div class="platformer-counter"><span>LIGHTS</span><output id="collectible-count" aria-live="polite">0 / 3</output><span id="boss-health-label" hidden>BOSS CORE</span><output id="boss-health" hidden>4 / 4</output></div>
+          </header>
+          <div class="platformer-screen">
+            <canvas id="platformer-canvas" width="800" height="600" tabindex="0" aria-label="Mini Platformer. Move with A and D or the arrow keys, jump with Space, stomp enemies from above, and collect three lights. The final level uses F or X to fire.">Mini Platformer: collect lights, stomp enemies, and reach the exit.</canvas>
+            <div class="platformer-overlay" id="platformer-overlay" hidden>
+              <p id="platformer-overlay-kicker">LEVEL COMPLETE</p>
+              <h3 id="platformer-overlay-title">Level Complete</h3>
+              <p class="platformer-overlay-message" id="platformer-overlay-message"></p>
+              <button class="platformer-play" id="platformer-again" type="button">CONTINUE</button>
+            </div>
+          </div>
+          <div class="platformer-actions">
+            <button class="platformer-play" id="platformer-play" type="button">PLAY</button>
+            <button class="platformer-restart" id="platformer-restart" type="button" aria-label="Restart level" title="Restart level"><i data-lucide="rotate-ccw"></i></button>
+            <div class="platformer-touch-controls" aria-label="Touch movement controls">
+              <button type="button" data-platformer-control="left" aria-label="Move left">←</button>
+              <button type="button" data-platformer-control="jump" aria-label="Jump">↑</button>
+              <button type="button" data-platformer-control="right" aria-label="Move right">→</button>
+              <button class="platformer-fire" type="button" data-platformer-control="fire" aria-label="Fire" hidden>●</button>
+            </div>
+          </div>
+          <p class="platformer-hint" id="platformer-hint"><span>MOVE</span> A D / ← → <span>JUMP</span> SPACE <span>STOMP</span> HEADS <span>RESTART</span> R <span class="platformer-fire-hint" id="fire-hint" hidden>FIRE F / X</span></p>
+        </section>
+        <div class="hero-copy">
+          <h1>hi, <strong>Deepak</strong> here<span class="cursor">|</span></h1>
+          <p class="hero-summary">Seeking a challenging career where my knowledge can be leveraged to add value and grow as an individual along with the 
+organization.</p>
+          <a class="outline-button" href="mailto:deepakshanmugamm@gmail.com"><i data-lucide="mail"></i> Say hi!</a>
+        </div>
+      </section>
+
+      <section id="about" class="section-shell content-section">
+        <h2><span>/</span> about me</h2>
+        <div class="about-grid">
+          <div class="about-copy">
+            <p>I am a creative game developer who enjoys turning ambitious ideas into engaging,interactive experiences.With a B.E. in Electronics and Communication Engineering,I’m focused on building games that combine thoughtful gameplay, technology, and visual design. My goal is to grow as a game developer.</p>
+            <ul class="tech-list"><li>Unity</li><li>C#</li><li>Blender</li><li>Photoshop</li><li>VR & AR</li><li>Unreal Engine</li></ul>
+            <p> Off the clock, I explore photography, experiment with light and sound, and turn strange ideas into interactive experiences.</p>
+          </div>
+          <div class="about-image-wrap"><img src="assets/astra-portrait.png" alt="deepak shanmugam portrait in a softly lit studio setting, conveying a calm and thoughtful mood" /><div class="image-frame"></div></div>
+        </div>
+      </section>
+
+      <section id="software" class="section-shell content-section">
+        <div class="section-heading"><h2><span>/</span> software</h2></div>
+        <p class="visuals-intro">I build interactive experiences that blend design, gameplay systems.</p>
+
+        <div class="software-showcase">
+          <article class="software-feature">
+            <div class="software-feature-copy">
+              <a class="software-feature-github" href="https://github.com/deepakshanmugaml" target="_blank" rel="noreferrer" aria-label="Open Neon Drift on GitHub">
+                <img src="assets/github.png" alt="GitHub" />
+              </a>
+              <p class="eyebrow">build</p>
+              <h3>VR</h3>
+              <p>An immersive VR survival experience where players operate a submarine, descend into the deep ocean, and respond to dangerous underwater situations from inside the cockpit.</p>
+              <div class="tags">
+                <span>Unity</span>
+                <span>C#</span>
+                <span>UI/UX</span>
+                <span>Prototyping</span>
+              </div>
+              <a class="square-link" href="projects.html" aria-label="Open project details"><i data-lucide="arrow-up-right"></i></a>
+            </div>
+            <div class="software-feature-visual" aria-hidden="true">
+              <img class="signal-image" src="assets/Screenshot 2026-10-24 103647.png" alt="">
+            </div>
+          </article>
+
+          <div class="software-grid">
+            <article class="software-card">
+              <div class="software-card-header">
+                <a class="software-card-github" href="https://github.com/deepakshanmugaml" target="_blank" rel="noreferrer" aria-label="Open Signal Forge on GitHub">
+                  <img src="assets/github.png" alt="GitHub" />
+                </a>
+              </div>
+              <h3>The Find</h3>
+              <p>A 3D exploration game focused on player movement, key collection, and door interaction. Players explore the environment, find a key, and use it to unlock doors and progress through the level.</p>
+              <div class="tags"><span>Unity</span><span>C#</span><span>Blender</span></div>
+            </article>
+
+            <article class="software-card">
+              <div class="software-card-header">
+                <a class="software-card-github" href="https://github.com/deepakshanmugaml" target="_blank" rel="noreferrer" aria-label="Open Arcade Logic on GitHub">
+                  <img src="assets/github.png" alt="GitHub" />
+                </a>
+              </div>
+              <h3>Leveldesing</h3>
+              <p>Designed and developed a 3D outdoor environment featuring an airport-style scene using Unity. The project focuses on environment composition, terrain setup, aircraft asset integration, and creating an immersive outdoor atmosphere.</p>
+              <div class="tags"><span>Gameplay</span><span>level</span><span>unity</span></div>
+            </article>
+
+            <article class="software-card">
+              <div class="software-card-header">
+                <a class="software-card-github" href="https://github.com/deepakshanmugaml" target="_blank" rel="noreferrer" aria-label="Open Field Notes on GitHub">
+                  <img src="assets/github.png" alt="GitHub" />
+                </a>
+              </div>
+              <h3>Portfolio</h3>
+              <p>This is my game development portfolio, showcasing my projects built using Unity and C#. It highlights my experience in VR development, gameplay programming, and 3D level design, along with my passion for creating immersive interactive experiences.</p>
+              <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            </article>
+          </div>
+        </div>
+
+      </section>
+
+      <section id="visuals" class="section-shell content-section art-section">
+        <div class="section-heading"><h2><span>/</span> visuals</h2><a class="text-link" href="all-photos.html" target="_blank" rel="noopener noreferrer">Explore collection <i data-lucide="arrow-up-right"></i></a></div>
+        <p class="visuals-intro">Capturing moments, perspectives, and stories through creative visuals.</p>
+        <div class="visuals-grid"><img src="visuals/train%20.png" alt="A little soul discovering a big world." loading="lazy" /><img src="visuals/20260616_205117.jpg" alt="Next stop: somewhere new." loading="lazy" /><img src="visuals/20260621_081658.jpg" alt="Where history stands still beneath an endless sky." loading="lazy" /><img src="visuals/20260620_175142.png" alt="In every detail, a story survives." loading="lazy" /><img src="visuals/20260620_182502(1)(1).png" alt="Walking through history, while creating memories of our own." loading="lazy" /></div>
+      </section>
+
+    </main>
+    <footer><p>Built and designed by pinkapple.</p><p>Copyright 2026</p></footer>
+    <script src="script.js"></script><script src="https://unpkg.com/lucide@latest" onload="lucide.createIcons()"></script>
+  </body>
+</html>
