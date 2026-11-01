@@ -31,11 +31,16 @@
         <button class="icon-button menu-button" aria-label="Open menu"><i data-lucide="menu"></i></button>
       </div>
     </header>
+    <button class="game-mode-launch" id="game-mode-launch" type="button" aria-controls="platformer-panel" aria-expanded="false">
+      <span class="game-mode-dot" aria-hidden="true"></span>
+      Game mode
+    </button>
 
     <main>
       <section id="intro" class="hero section-shell">
         <div class="signal-art" aria-hidden="true"><img class="portrait-fallback" src="assets/astra-portrait-transparent.png" alt=""><canvas class="portrait-canvas"></canvas></div>
-        <section class="platformer-panel" id="platformer-panel" aria-labelledby="platformer-title" hidden>
+        <div class="hero-details">
+          <section class="platformer-panel" id="platformer-panel" aria-labelledby="platformer-title" hidden>
           <header class="platformer-heading">
             <div><p class="eyebrow" id="level-kicker">LEVEL 1 / 3</p><h2 id="platformer-title">Mini Platformer</h2><p class="platformer-weapon-status" id="weapon-status" hidden>GUN ONLINE / <span id="bullet-kind">RANDOM ROUND</span></p></div>
             <div class="platformer-counter"><span>LIGHTS</span><output id="collectible-count" aria-live="polite">0 / 3</output><span id="boss-health-label" hidden>BOSS CORE</span><output id="boss-health" hidden>4 / 4</output></div>
@@ -52,6 +57,7 @@
           <div class="platformer-actions">
             <button class="platformer-play" id="platformer-play" type="button">PLAY</button>
             <button class="platformer-restart" id="platformer-restart" type="button" aria-label="Restart level" title="Restart level"><i data-lucide="rotate-ccw"></i></button>
+            <button class="platformer-sound" id="platformer-sound" type="button" aria-label="Sound effects on" aria-pressed="true">SFX ON</button>
             <div class="platformer-touch-controls" aria-label="Touch movement controls">
               <button type="button" data-platformer-control="left" aria-label="Move left">←</button>
               <button type="button" data-platformer-control="jump" aria-label="Jump">↑</button>
@@ -60,12 +66,13 @@
             </div>
           </div>
           <p class="platformer-hint" id="platformer-hint"><span>MOVE</span> A D / ← → <span>JUMP</span> SPACE <span>STOMP</span> HEADS <span>RESTART</span> R <span class="platformer-fire-hint" id="fire-hint" hidden>FIRE F / X</span></p>
-        </section>
-        <div class="hero-copy">
-          <h1>hi, <strong>Deepak</strong> here<span class="cursor">|</span></h1>
-          <p class="hero-summary">Seeking a challenging career where my knowledge can be leveraged to add value and grow as an individual along with the 
+          </section>
+          <div class="hero-copy">
+            <h1>hi, <strong>Deepak</strong> here<span class="cursor">|</span></h1>
+            <p class="hero-summary">Seeking a challenging career where my knowledge can be leveraged to add value and grow as an individual along with the 
 organization.</p>
-          <a class="outline-button" href="mailto:deepakshanmugamm@gmail.com"><i data-lucide="mail"></i> Say hi!</a>
+            <a class="outline-button" href="mailto:deepakshanmugamm@gmail.com"><i data-lucide="mail"></i> Say hi!</a>
+          </div>
         </div>
       </section>
 
